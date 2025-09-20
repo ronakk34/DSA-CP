@@ -1,0 +1,32 @@
+Recursion -->>>
+
+When a function call itself
+util a specified condition is meet
+
+Stack Overflow -->>
+
+--keep on calling the function and executing the function infinity time is stack Overflow
+
+or --when the numerous function call waiting due to Recursion is stack Overflow
+
+// Recursion Tree -->>>
+
+Recursion tree is represent in the terms of function..
+Or Recursion represent in short form..
+
+//Multiple Recursion call-->>>>
+
+Fibonacci numbers --->>
+0,1,1,2,3,5,8,13,21,34....
+
+// Pallindrone String -->>
+
+when we reverse the string and its remains same as before the string is Pallindrone
+example is "madam"
+reverse of madam will the same as before...
+
+
+
+
+
+

@@ -1,0 +1,1 @@
+{"name":"Local: Problem_6","url":"c:\\DSA\\CP\\CP 31 QUE\\Problem_6.cpp","tests":[{"id":1757614479819,"input":"10\n1 2\n2 2\n1 3\n3 2\n2 3\n1 4\n4 2\n3 3\n2 4\n1 5","output":"2\n7 3\n1\n10\n1\n3\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\DSA\\CP\\CP 31 QUE\\Problem_6.cpp","group":"local","local":true}

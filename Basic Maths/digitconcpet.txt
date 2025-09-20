@@ -1,0 +1,56 @@
+If any no. is % 10 then the last will be the final answer...
+// For example N=1234%10 then the final output is N=4
+Single digit % 10 = 0...
+
+
+To calculating digits in any number the other method is to calculate log base 10
+of the the number and add 1 in then the output will the number of digit it will in float
+covert into integres...
+
+suppose you have to calculate no. of digit in N=5738
+the answer N=int(logbase 10(5738))+1 the answer will be 4
+
+Time complexity...
+
+TC = 0(log10(n)) only when the number is devided by 10 if number is devided by 2 then the base 
+of log will 2 if there is not division by any number then in Time complexity there will not use log
+
+Armstrong number--->>>>
+
+If any no. N=371 all digits cubes and sum of all the cubes is equal to the same no. is the armstrong number
+N=371=3^3+7^3+1^3=371....
+
+Prime Number --->>>
+
+A number that has exactly two factors which is 1 and itself
+Example -- 2,3,5,7,11....
+
+
+GCD|HCF --->>
+
+GCD means greatest common divisor 
+If there are two number 9 and 12 then factor of 9 =1,3,9 and 12 = 1,2,3,4,6,12 so the gcd of the given two number will
+be gcd(9,12) = 3 means 3 is the highest number that can divide both.
+
+GCD can be the given no. gcd of 20 and 40 is 20.
+
+Eculidean Algorithm -->>>
+
+N1,N2
+
+GCD(N1,N2) = GCD(N1-N2,N2) and here N1>N2...
+
+another method without doing above stuff
+
+GCD(N1,N2) = GCD(greater%smaller,N2) and if any will zero than another one will GCD....
+
+Implemetation--
+
+while(a>0 && b>0)
+if(a>b) a =a%b
+else b = b%a
+
+if(a==0) print(a)
+else print (b)
+
+

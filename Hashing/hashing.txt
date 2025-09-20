@@ -1,0 +1,76 @@
+//Hashing-->>
+
+Prestore something and fetch when it requires...
+
+for example if any array given [1,2,1,3,2]
+
+in hashing we create array at max of 12 or 15
+
+and that array called hash array
+
+hash array/frequancy array = [0,0,0,0,0,0,0,0,0,0,0,0, 0]
+              0,1,2,3,4,5,6,7,8,9,10,11,12
+
+              go to first array and take 1 and then go hash array and at first postion and tell remember 1 and then go
+              2 in first array and in hash array tell remember 2 at position of 2 and again to value of 1 and then first 
+              array and tell that remember value of 1 at position of 1 and it will remember/store 2 means value of 1 is stored 2 time
+              means value 1 is 2 times in the first array...
+
+              if we wanna know frequancy or how many same number in the we directly print hash[1] its tell how many 1 is present in the 
+              first array..
+
+query --->>>
+
+its basically no. of times of no. of quaries to run loop for print frequancy of no. in array
+
+example -- suppose we take q =5 to check frequancy of number in a given array 1,2,5,4,2
+so it will run five times for first times its enter in the loop then we take any no. to check the frequency in the array
+for eg. we take 2 it will show the frequency 2.
+
+so the value of q can be any thing instead of negative it can less or greater than no. of elements in the array
+
+
+// Size of hash--->>>
+
+inside main the maximum size of hash can be only declare 10^6.. for bool array inside main 10^7..
+if we declare globally(outside from main) size of hash then it can 10^7.. for bool array globally can 10^8..
+For enter max size of number then there are stl in cpp..
+
+// Segmentation Fault--->>>
+It is specific kind of error that occurs when program tries to access restricted area of memory..
+
+//Control reach and non void function error-->>
+
+-- this error show when in there a path in your code where function might finish without returning anything..
+
+//Characters hashing-->>>
+
+In characters hashing first we have to create a array of size 26 name of hash then enter the value of string in the hash array
+using ASCII keys ...
+
+-- In characters hashing there is'nt any kind of problem of space.. because there are only 256 char so array can strore 256 characters..
+
+
+//Hash Map in cpp-->>>
+
+-- Map is defined as key and value syntax of map is map<key,value>
+   key==number value==frequancy                      number,frequancy
+
+   map store all the value in sorted order..
+
+Time complexity of map -->>
+
+Storing and fetching takes log(n)  n-- number of elements
+
+unorder map -->> in unorder  o(1) -- average best
+                  -- worst o(n)
+
+
+//Hashing -->> 1.Division method (linear changing)
+               2.Folding method
+               3.Mid sqaure method
+
+
+
+
+
