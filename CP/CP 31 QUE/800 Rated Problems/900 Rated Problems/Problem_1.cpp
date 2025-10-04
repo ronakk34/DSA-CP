@@ -1,3 +1,5 @@
+// A. Forked!-->>
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -11,7 +13,11 @@ const ll INF = 1e18;
 const ll MOD = 1e9 + 7;
 
 void solve() {
-    // your solution for ONE test case goes here
+    ll a,b,xk,yk,xq,yq;
+    cin >> a >> b;
+    cin >> xk >> yk;
+    cin >> xq >> yq;
+    
 }
 
 int main() {
@@ -19,7 +25,7 @@ int main() {
     cin.tie(nullptr);
 
     int t = 1;
-    cin >> t;   
+    cin >> t;   // if multiple test cases
     while(t--) {
         solve();
     }

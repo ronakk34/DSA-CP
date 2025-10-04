@@ -1,3 +1,5 @@
+// A. Increase or Smash-->>>
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -11,7 +13,15 @@ const ll INF = 1e18;
 const ll MOD = 1e9 + 7;
 
 void solve() {
-    // your solution for ONE test case goes here
+    ll n;
+    cin >> n;
+    vector<ll> arr(n);
+    set<int> s;
+    for(int i = 0;i<n;i++){
+        cin >> arr[i];
+        s.insert(arr[i]);
+    }
+    cout << s.size()*2-1 << endl;
 }
 
 int main() {
@@ -19,7 +29,7 @@ int main() {
     cin.tie(nullptr);
 
     int t = 1;
-    cin >> t;   
+    cin >> t;   // if multiple test cases
     while(t--) {
         solve();
     }
