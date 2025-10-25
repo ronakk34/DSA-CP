@@ -1,3 +1,5 @@
+// B. Beautiful String-->>
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -11,7 +13,24 @@ const ll INF = 1e18;
 const ll MOD = 1e9 + 7;
 
 void RON() {
-    
+    ll n;
+    cin >> n ;
+    string s;
+    cin >> s;
+    ll zereos = 0;
+    for(int i = 0;i<n;i++){
+        if(s[i]=='0'){
+            zereos++;
+        }
+    }
+    cout << zereos << endl;
+    for(int i = 0;i<n;i++){
+        if(s[i]=='0'){
+            cout << i+1 << " ";
+        }
+    }
+    cout << endl;
+
 }
 
 int main() {

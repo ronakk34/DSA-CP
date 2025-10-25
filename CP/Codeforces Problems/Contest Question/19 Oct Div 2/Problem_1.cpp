@@ -1,3 +1,5 @@
+// A. Notelock-->>
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -11,7 +13,22 @@ const ll INF = 1e18;
 const ll MOD = 1e9 + 7;
 
 void RON() {
-    
+    ll n,k;
+    cin >> n >> k;
+    string s;
+    cin >> s;
+    ll last = -100000;
+    ll ans = 0;
+    for(int i = 0;i<n;i++){
+        if(s[i]=='1'){
+            if(i-last>=k){
+                ans++;
+            }
+            
+            last = i;
+        }
+    }
+    cout << ans << endl;
 }
 
 int main() {

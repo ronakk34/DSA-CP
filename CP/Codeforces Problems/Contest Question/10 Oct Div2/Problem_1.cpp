@@ -1,3 +1,5 @@
+// A. Circle of Apple Trees-->>
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -11,7 +13,16 @@ const ll INF = 1e18;
 const ll MOD = 1e9 + 7;
 
 void RON() {
-    
+    ll n;
+    cin >> n;
+    vector<ll> arr(n);
+    map<ll,ll> freq;
+    for(int i = 0;i<n;i++){
+        cin >> arr[i];
+        freq[arr[i]]++;
+    }
+    int ans = freq.size();
+    cout << ans << endl;
 }
 
 int main() {

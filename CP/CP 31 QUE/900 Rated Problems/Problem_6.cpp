@@ -1,3 +1,5 @@
+// B. Longest Divisors Interval-->>
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -11,7 +13,13 @@ const ll INF = 1e18;
 const ll MOD = 1e9 + 7;
 
 void RON() {
-    
+    ll n;
+    cin >> n;
+    ll i = 1;
+    while(n%i==0){
+        i++;
+    }
+    cout << i-1 << endl;
 }
 
 int main() {

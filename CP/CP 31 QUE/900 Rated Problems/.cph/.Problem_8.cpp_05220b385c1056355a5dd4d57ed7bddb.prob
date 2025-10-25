@@ -1,0 +1,1 @@
+{"name":"Local: Problem_8","url":"c:\\DSA\\CP\\CP 31 QUE\\900 Rated Problems\\Problem_8.cpp","tests":[{"id":1761140731351,"input":"4\n4\n<<>>\n4\n>><<\n5\n>>>>>\n7\n<><><><\n","output":"3\n3\n6\n2\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\DSA\\CP\\CP 31 QUE\\900 Rated Problems\\Problem_8.cpp","group":"local","local":true}

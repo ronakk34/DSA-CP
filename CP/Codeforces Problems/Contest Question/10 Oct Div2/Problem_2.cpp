@@ -1,3 +1,5 @@
+// B. Bitwise Reversion-->>
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -11,9 +13,16 @@ const ll INF = 1e18;
 const ll MOD = 1e9 + 7;
 
 void RON() {
+    ll x,y,z;
+    cin >> x >> y >> z;
+    if((x & y) == (x & z) && (x & z) == (y & z)){
+        cout << "Yes" << endl;
+    }
+    else{
+        cout << "No" << endl;
+    }
     
 }
-
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
