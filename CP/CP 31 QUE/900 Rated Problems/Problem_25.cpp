@@ -1,3 +1,5 @@
+// B. Bad Boy-->>
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -11,8 +13,10 @@ const ll INF = 1e18;
 const ll MOD = 1e9 + 7;
 
 void RON() {
-    
-}
+    ll n,m,i,j;
+    cin >> n >> m >> i >> j;
+    cout << "1" << " " << "1" << " " << n << " " << m << endl;
+} 
 
 int main() {
     ios::sync_with_stdio(false);

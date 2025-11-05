@@ -1,3 +1,5 @@
+// A. AB Balance-->>
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -11,6 +13,16 @@ const ll INF = 1e18;
 const ll MOD = 1e9 + 7;
 
 void RON() {
+    string s;
+    cin >> s;
+    ll n = s.size();
+    if(s[0]==s[n-1]){
+        cout << s << endl;
+    }
+    else{
+        s[0]=s[n-1];
+        cout << s << endl;
+    }
     
 }
 
