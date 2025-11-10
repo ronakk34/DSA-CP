@@ -1,3 +1,5 @@
+// A. Souvlaki VS. Kalamaki-->>
+
 
 // RON IS HERE..
 
@@ -14,7 +16,25 @@ const ll INF = 1e18;
 const ll MOD = 1e9 + 7;
 
 void RON() {
-    
+    ll n;
+    cin >> n;
+    ll found = false;
+    vector<ll> arr(n);
+    for(int i = 0;i<n;i++){
+        cin >> arr[i];
+    }
+    sort(arr.begin(),arr.end());
+    for(int i = 1;i<n-1;i+=2){
+        if(arr[i]<arr[i+1]){
+            found = true;
+        }
+    }
+    if(found){
+        cout << "No" << endl;
+    }
+    else{
+        cout << "Yes" << endl;
+    }
 }
 
 int main() {

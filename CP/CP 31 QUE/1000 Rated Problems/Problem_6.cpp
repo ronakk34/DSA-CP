@@ -1,3 +1,5 @@
+// C. Ski Resort-->>
+
 
 // RON IS HERE..
 
@@ -14,7 +16,25 @@ const ll INF = 1e18;
 const ll MOD = 1e9 + 7;
 
 void RON() {
-    
+    ll n,k,q;
+    cin >> n >> k >> q;
+    vector<ll> arr(n);
+    ll max = 0;
+    for(int i = 0;i<n;i++){
+        cin >> arr[i];
+        if(arr[i]>q){
+            max++;
+        }
+    }
+    if(max==n || n-max < k){
+        cout << "0" << endl;
+    }
+    else{
+        for(int i = 0;i<n;i++){
+            
+        }
+    }
+
 }
 
 int main() {
