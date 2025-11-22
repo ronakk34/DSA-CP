@@ -20,6 +20,8 @@ void RON() {
     cin >> n >> k >> q;
     vector<ll> arr(n);
     ll max = 0;
+    ll ans  =0;
+    ll count = 0;
     for(int i = 0;i<n;i++){
         cin >> arr[i];
         if(arr[i]>q){
@@ -31,8 +33,21 @@ void RON() {
     }
     else{
         for(int i = 0;i<n;i++){
-            
+            if(arr[i]<=q){
+                count++;
+            }
+            else{
+                if(count>=k){
+                   ans+=(count-k+1)*(count-k+2)/2;
+                }
+                count = 0;
+            }
         }
+
+        if(count>=k){
+            ans+=(count-k+1)*(count-k+2)/2;
+        }
+        cout << ans << endl;
     }
 
 }

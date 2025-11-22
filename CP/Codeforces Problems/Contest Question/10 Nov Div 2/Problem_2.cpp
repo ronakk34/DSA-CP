@@ -3,77 +3,105 @@
 
 // RON IS HERE..
 
-#include <bits/stdc++.h>
+
+
+#include<bits/stdc++.h>
 using namespace std;
 
-using ll = long long;
-#define pb push_back
-#define all(v) v.begin(), v.end()
-#define sz(v) (int)v.size()
-#define endl "\n"
-
-const ll INF = 1e18;
-const ll MOD = 1e9 + 7;
-
-void RON() {
-    ll n;
-    cin >> n;
-    ll ones = 0;
-    ll zeroes = 0;
-    ll max = INT_MIN;
-    ll min = INT_MAX;
-    string s;
-    vector<ll> arr(n);
-    for(int i = 0;i<n;i++){
-        cin >> arr[i];
-        if(arr[i]>max){{
-            max = arr[i];
-        }
-        if(arr[i]<min){
-            min = arr[i];
-        }
-    }
-    string x;
-    cin >> x;
-    for(int i = 0;i<n;i++){
-        if(x=='1'){
-            ones++;
-        }
-        else{
-            zeroes++;
-        }
-    }
-    if(ones == n || s[0]=='1' || s[n-1]=='1'){
-        cout << "-1" << endl;
-    }
-    else{
-        ll min_val = INT_MAX;
-        ll max_val = INT_MIN;
-        for(int i = 0;i<n;i++){
-            if(x[i]=='1'){
-                if(arr[i]==max || arr[i]==min){
-                    found = true;
-                    break;
-                }
-                else{
-                    min_val = min(min_val,arr[i]);
-                    min_val_inde
-                    max_val = max(max_val,arr[i]);
-                }
+int main(){
+    int t;
+    cin >> t;
+    while(t--){
+        int n;
+        cin >> n;
+        vector<int> p(n+1);
+        int mx = 1;
+        int mn = 1;
+        for(int i = 1;i<=n;i++){
+            cin >> p[i];
+            if(p[i]<p[mn]){
+                mn = i;
+            }
+            if(p[i]>p[mx]){
+                mx = i;
             }
         }
-        for()
+        string x;
+        cin >> x;
+        x = " "+x;
+        if(x[1]=='1'|| x[n]=='1'){
+            cout << "-1" << endl;
+            
+        }
+        else if(x[mx]=='1'|| x[mn]=='1'){
+            cout << "-1" << endl;
+            
+        }
+        else{
+            cout << "5" << endl;
+            cout << "1" << " " <<  mx << endl;;
+            cout << "1" << " " <<  mn << endl;;
+            cout << mn << " " << n << endl;
+            cout << mx << " " << n << endl;
+            cout << min(mx,mn) << " " << max(mx,mn) << endl;
+        }
     }
 }
-}
 
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
+// #include <bits/stdc++.h>
+// using namespace std;
 
-    int t = 1;
-    cin >> t;   
-    while(t--) {
-        RON();
-    }
-}
+// using ll = long long;
+// #define pb push_back
+// #define all(v) v.begin(), v.end()
+// #define sz(v) (int)v.size()
+// #define endl "\n"
+
+// const ll INF = 1e18;
+// const ll MOD = 1e9 + 7;
+
+// void RON() {
+//     ll n;
+//     cin >> n;
+//     vector<ll> p(n+1);
+//     ll mn = 1;
+//     ll mx = 1;
+//     for(int i = 1;i<=n;i++){
+//         cin >> p[i];
+//         if(p[i]<p[mn]){
+//             mn = i;
+//         }
+//         if(p[i]>p[mx]){
+//             mx = i;
+//         }
+//     }
+//     string x;
+//     cin >> x;
+//     x = " "+x;
+//     if(x[1]=='1' || x[n]=='1'){
+//         cout << "-1" << endl;
+//     }
+//     else if(x[mn]=='1' || x[mx]=='1'){
+//         cout << '-1' << endl;
+//     }
+//     else{
+//         cout << "5" << endl;
+//         cout << "1" << " " << mn << endl;
+//         cout << "1" << " " << mx << endl;
+//         cout << mn << " " << n << endl;
+//         cout << mx << " " << n << endl;
+//         cout << min(mx,mn) << " " << max(mn,mx) << endl;
+//     }
+
+// }
+
+// int main() {
+//     ios::sync_with_stdio(false);
+//     cin.tie(nullptr);
+
+//     int t = 1;
+//     cin >> t;   
+//     while(t--) {
+//         RON();
+//     }
+// }
