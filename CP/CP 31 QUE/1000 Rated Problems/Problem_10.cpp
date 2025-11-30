@@ -1,4 +1,4 @@
-// D. Distinct Split-->>
+// C. Traffic Light-->>
 
 
 // RON IS HERE..
@@ -18,25 +18,23 @@ const ll MOD = 1e9 + 7;
 void RON() {
     ll n;
     cin >> n;
+    char c;
+    cin >> c;
     string s;
     cin >> s;
-    vector<ll> suffix(n);
-    vector<ll> prefix(n);
-    set<ll> st;
-    for(int i =0;i<n;i++){
-        st.insert(s[i]);
-        prefix[i] = st.size();
-    }
-    st.clear();
-    for(int i = n-1;i>=0;i--){
-        st.insert(s[i]);
-        suffix[i] = st.size();
-    }
+    s+=s;
+    ll index = 0;
     ll ans = 0;
-    for(int i = 0;i<n-1;i++){
-        ans = max(ans,prefix[i]+suffix[i+1]);
+    for(int i = 2*n-1;i>=0;i--){
+        if(s[i]=='g'){
+            index = i;
+        }
+        else if(s[i]==c){
+            ans = max(ans,index-i);
+        }
     }
     cout << ans << endl;
+
 }
 
 int main() {

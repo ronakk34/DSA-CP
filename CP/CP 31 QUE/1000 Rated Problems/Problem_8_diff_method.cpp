@@ -20,21 +20,19 @@ void RON() {
     cin >> n;
     string s;
     cin >> s;
-    vector<ll> suffix(n);
-    vector<ll> prefix(n);
-    set<ll> st;
-    for(int i =0;i<n;i++){
-        st.insert(s[i]);
-        prefix[i] = st.size();
-    }
-    st.clear();
-    for(int i = n-1;i>=0;i--){
-        st.insert(s[i]);
-        suffix[i] = st.size();
+    map<char,ll> mp1,mp2;
+    for(auto x:s){
+        mp1[x]++;
     }
     ll ans = 0;
-    for(int i = 0;i<n-1;i++){
-        ans = max(ans,prefix[i]+suffix[i+1]);
+    for(auto x:s){
+        mp2[x]++;
+        mp1[x]--;
+        if(mp1[x]==0){
+            mp1.erase(x);
+        }
+        ll total_unique = mp1.size()+mp2.size();
+        ans = max(ans,total_unique);
     }
     cout << ans << endl;
 }
