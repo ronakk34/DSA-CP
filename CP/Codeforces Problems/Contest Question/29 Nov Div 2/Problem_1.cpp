@@ -1,4 +1,7 @@
+// A. Suspension-->>
 
+
+// RON IS HERE..
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -13,6 +16,17 @@ const ll INF = 1e18;
 const ll MOD = 1e9 + 7;
 
 void RON() {
+    ll n,r,y;
+    cin >> n;
+    cin >> y >> r;
+    ll ans = r+y/2;
+    if(ans>=n){
+        cout << n << endl;
+    }
+    else{
+        cout << ans << endl;
+    }
+
     
 }
 

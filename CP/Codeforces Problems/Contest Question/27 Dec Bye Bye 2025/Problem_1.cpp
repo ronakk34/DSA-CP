@@ -1,4 +1,4 @@
-
+// A. Yes or Yes
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -13,7 +13,24 @@ const ll INF = 1e18;
 const ll MOD = 1e9 + 7;
 
 void RON() {
-    
+    string s;
+    cin >> s;
+    ll y = 0;
+    ll n = 0;
+    for(int i = 0;i<s.size();i++){
+        if(s[i]=='Y'){
+            y++;
+        }
+        else{
+            n++;
+        }
+    }
+    if(y>1){
+        cout << "No" << endl;
+    }
+    else{
+        cout << "Yes" << endl;
+    }
 }
 
 int main() {
